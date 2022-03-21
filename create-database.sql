@@ -1,5 +1,5 @@
 CREATE DATABASE tutorials;
-USE company;
+USE tutorials;
 
 CREATE TABLE users
 (
