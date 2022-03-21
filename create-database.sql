@@ -1,7 +1,7 @@
-CREATE DATABASE company;
+CREATE DATABASE tutorials;
 USE company;
 
-CREATE TABLE employees
+CREATE TABLE users
 (
           id int IDENTITY(1,1) PRIMARY KEY,
           name nvarchar(50) null,
