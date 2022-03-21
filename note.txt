@@ -1,0 +1,18 @@
+Install the Drivers
+Source: https://docs.microsoft.com/en-us/iis/application-frameworks/install-and-configure-php-on-iis/install-the-sql-server-driver-for-php
+1. Download Drivers --> https://docs.microsoft.com/en-us/sql/connect/php/download-drivers-php-sql-server?view=sql-server-2017
+2. Check PHP version
+info.php: <?php phpinfo(); ?>
+- Check Version
+- Check Architecture  --> x86 or x64
+- Check PHP Extension Build --> NTS or TS
+
+3. Copy files to C:\xampp\php\ext
+- php_sqlsrv_<php version>_<extension build>_<Architecture>.dll
+- php_pdo_sqlsrv_<php version>_<extension build>_<Architecture>.dll
+
+4. Edit file php.ini
+Add:
+- extension=php_sqlsrv_<php version>_<extension build>_<Architecture>.dll
+- extension=php_pdo_sqlsrv_<php version>_<extension build>_<Architecture>.dll
+
