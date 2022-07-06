@@ -14,7 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               $query->execute([":name" => $req->name]);
 
                               echo json_encode(["state" => true, "msg" => "Insert successfully."]);
-                              unset($conn);
                     } catch (PDOException $e) {
                               echo ($e->getMessage());
                     }
@@ -31,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               }
 
                               echo json_encode($data);
-                              unset($conn);
                     } catch (PDOException $e) {
                               echo ($e->getMessage());
                     }
@@ -44,7 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               $query->execute([":name" => $req->name, ":id" => $req->id]);
 
                               echo json_encode(["state" => true, "msg" => "Updated."]);
-                              unset($conn);
                     } catch (PDOException $e) {
                               echo ($e->getMessage());
                     }
@@ -57,7 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                               $query->execute([":id" => $req->id]);
 
                               echo json_encode(["state" => true, "msg" => "Deleted."]);
-                              unset($conn);
                     } catch (PDOException $e) {
                               echo ($e->getMessage());
                     }
