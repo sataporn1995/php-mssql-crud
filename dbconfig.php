@@ -5,7 +5,7 @@ Header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE');
 header("Content-Type: application/json; charset=UTF-8");
 date_default_timezone_set('Asia/Bangkok');
 
-$dbServer = "127.0.0.1";
-$dbUsername = "sa";
-$dbPassword = "12345678";
-$database = "tutorials";
+$server = "<server>";
+$username = "<username>";
+$password = "<password>";
+$database = "<database>";
